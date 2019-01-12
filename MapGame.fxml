@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane onKeyPressed="#keyAction" prefHeight="700.0" prefWidth="1364.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MapGameController">
+   <children>
+      <HBox layoutX="10.0" layoutY="87.0" prefHeight="480.0" prefWidth="1344.0">
+         <children>
+            <Pane fx:id="map3D" prefHeight="480.0" prefWidth="672.0">
+               <children>
+                  <ImageView fx:id="back" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/back.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="m3l" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m3l.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="m3r" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m3r.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="m3m" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m3m.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="door3" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/door3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="m2l" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m2l.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="m2r" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m2r.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="m2m" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m2m.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="door2" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/door2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="m1l" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m1l.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="m1r" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m1r.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="m1m" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m1m.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="door" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/door.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="m0l" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m0l.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="m0r" fitHeight="480.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/map/m0r.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="watch" fitHeight="100.0" fitWidth="100.0" layoutX="290.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/watch.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="pik" fitHeight="100.0" fitWidth="100.0" layoutX="290.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/pik.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="key" fitHeight="100.0" fitWidth="100.0" layoutX="290.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/key.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="timeCount" layoutX="502.0" layoutY="-5.0" prefHeight="13.0" prefWidth="300.0" />
+               </children></Pane>
+            <GridPane fx:id="mapGrid" prefHeight="480.0" prefWidth="672.0" />
+         </children>
+      </HBox>
+      <Pane layoutX="-2.0" layoutY="567.0" prefHeight="133.0" prefWidth="1366.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="157.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@png/pik.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="860.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@png/bigWALL.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bigkey" fitHeight="129.0" fitWidth="130.0" layoutX="24.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@png/key.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="300.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@png/x.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="993.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@png/x.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="pikCount" layoutX="378.0" layoutY="118.0" prefHeight="13.0" prefWidth="300.0" />
+            <Pane fx:id="wallCount" layoutX="1075.0" layoutY="121.0" prefHeight="10.0" prefWidth="244.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="plus" layoutX="850.0" layoutY="39.0" prefHeight="48.0" prefWidth="203.0" />
+      <ImageView fx:id="solve" fitHeight="701.0" fitWidth="1364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@png/sw.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="give" fitHeight="701.0" fitWidth="1364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@png/gw.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="coolTime" layoutX="681.0" layoutY="686.0" prefHeight="13.0" prefWidth="200.0" />
+      <Pane fx:id="retryGame" layoutX="582.0" layoutY="672.0" prefHeight="21.0" prefWidth="200.0" />
+   </children>
+</Pane>
