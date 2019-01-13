@@ -1,6 +1,4 @@
 # Break_And_Create
-====
-
 Overview
 This is a battle game set in the maze．
 
